@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Duel of Ages II Team Generator</title>
+    
+    <script type="text/javascript" src="Scripts/character.js"></script>
+    <script type="text/javascript" src="Scripts/xmlParse.js"></script>
+    <script type="text/javascript" src="Scripts/filter.js"></script>
+    <script type="text/javascript" src="Scripts/randomizer.js"></script>
+    <script type="text/javascript" src="Scripts/processForm.js"></script>
+    <script type="text/javascript" src="Scripts/display.js"></script>
+    
+    <script type="text/javascript">
+      loadXML("doa2_character_db.xml");
+    </script>
+    
+    <link rel="stylesheet" href="Scripts/styles.css">
+  </head>
+  <body>
+    <h1>Duel of Ages II Team Generator</h1>
+    <h2>Setup Options</h2>
+    
+    <form onsubmit="return false;">
+      
+      <fieldset name="required">
+        <legend>Required</legend>
+        <span>Number of Teams:</span>
+          <select name="numTeams" required disabled>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+
+        <span>Characters per Team: </span>
+        <input type="number" name="numChars" min="1" max="99" maxlength="2" size="2" step="1" value="8" required />
+
+        <span>Draft Type: </span>
+        <select name="draft" required onchange="checkDraft(this)">
+          <option value="standard">Standard</option>
+          <option value="pure" selected>Pure</option>
+          <option value="draft">Draft</option>
+        </select>
+        
+        <span>Extra Characters: </span>
+        <input type="number" name="numXChars" min="0" max="99" maxlength="2" size="2" step="1" value="4" disabled />
+      </fieldset>
+      
+      <fieldset name="set">
+        <legend>Set</legend>
+        <input type="checkbox" name="set" id="basic" value="Basic" checked />
+        <label for="basic">Basic</label>
+        <input type="checkbox" name="set" id="master" value="Master" checked />
+        <label for="master">Master</label>
+      </fieldset>
+      
+      <fieldset name="ageSet">
+        <legend>Age &amp; Setting</legend>
+        <table>
+          <tbody>
+            <tr>
+              <th>Age</th>
+              <th colspan="3">Setting</th>
+            </tr>
+            <tr>
+              <td class="age">
+                <input type="checkbox" name="age" id="a1" value="Ancient" onclick="checkClicked(this, this.form);" checked />
+                <label for="a1">Ancient</label>
+              </td>
+              <td class="setting">
+                <input type="checkbox" name="setting" id="s11" value="Epic Heroes" onclick="checkClicked(this, this.form);" checked />
+                <label for="s11">Epic Heroes</label>
+              </td>
+              <td class="setting">
+                <input type="checkbox" name="setting" id="s12" value="Faer" onclick="checkClicked(this, this.form);" checked />
+                <label for="s12">Faer</label>
+              </td>
+              <td class="setting">
+                <input type="checkbox" name="setting" id="s13" value="Chasms" onclick="checkClicked(this, this.form);" checked />
+                <label for="s13">Chasms</label>
+              </td>
+            </tr>
+            <tr>
+              <td class="age">
+                <input type="checkbox" name="age" id="a2" value="Colonial" onclick="checkClicked(this, this.form);" checked />
+                <label for="a2">Colonial</label>
+              </td>
+              <td class="setting">
+                <input type="checkbox" name="setting" id="s21" value="Lands West" onclick="checkClicked(this, this.form);" checked />
+                <label for="s21">Lands West</label>
+              </td>
+              <td class="setting">
+                <input type="checkbox" name="setting" id="s22" value="Folktales" onclick="checkClicked(this, this.form);" checked />
+                <label for="s22">Folktales</label>
+              </td>
+              <td class="setting">
+                <input type="checkbox" name="setting" id="s23" value="Horizons" onclick="checkClicked(this, this.form);" checked />
+                <label for="s23">Horizons</label>
+              </td>
+            </tr>
+            <tr>
+              <td class="age">
+                <input type="checkbox" name="age" id="a3" value="Modern" onclick="checkClicked(this, this.form);" checked />
+                <label for="a3">Modern</label>
+              </td>
+              <td class="setting">
+                <input type="checkbox" name="setting" id="s31" value="Age of Crisis" onclick="checkClicked(this, this.form);" checked />
+                <label for="s31">Age of Crisis</label>
+              </td>
+              <td class="setting">
+                <input type="checkbox" name="setting" id="s32" value="The Underground" onclick="checkClicked(this, this.form);" checked />
+                <label for="s32">The Underground</label>
+              </td>
+              <td class="setting">
+                <input type="checkbox" name="setting" id="s33" value="Strange Times" onclick="checkClicked(this, this.form);" checked />
+                <label for="s33">Strange Times</label>
+              </td>
+            </tr>
+            <tr>
+              <td class="age">
+                <input type="checkbox" name="age" id="a4" value="Future" onclick="checkClicked(this, this.form);" checked />
+                <label for="a4">Future</label>
+              </td>
+              <td class="setting">
+                <input type="checkbox" name="setting" id="s41" value="Altspace" onclick="checkClicked(this, this.form);" checked />
+                <label for="s41">Altspace</label>
+              </td>
+              <td class="setting">
+                <input type="checkbox" name="setting" id="s42" value="Starmarch" onclick="checkClicked(this, this.form);" checked />
+                <label for="s42">Starmarch</label>
+              </td>
+              <td class="setting">
+                <input type="checkbox" name="setting" id="s43" value="Forty Worlds" onclick="checkClicked(this, this.form);" checked />
+                <label for="s43">Forty Worlds</label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+      
+      <fieldset name="circle">
+        <legend>Circle</legend>
+        <input type="checkbox" name="circle" id="adventurer" value="Adventurer" checked />
+        <label for="adventurer">Adventurer</label>
+        <input type="checkbox" name="circle" id="commoner" value="Commoner" checked />
+        <label for="commoner">Commoner</label>
+        <input type="checkbox" name="circle" id="defender" value="Defender" checked />
+        <label for="defender">Defender</label>
+        <input type="checkbox" name="circle" id="exemplar" value="Exemplar" checked />
+        <label for="exemplar">Exemplar</label>
+        <input type="checkbox" name="circle" id="icon" value="Icon" checked />
+        <label for="icon">Icon</label>
+        <input type="checkbox" name="circle" id="lord" value="Lord" checked />
+        <label for="lord">Lord</label>
+        <input type="checkbox" name="circle" id="outcast" value="Outcast" checked />
+        <label for="outcast">Outcast</label>
+        <input type="checkbox" name="circle" id="villain" value="Villain" checked />
+        <label for="villain">Villain</label>
+        <input type="checkbox" name="circle" id="warrior" value="Warrior" checked />
+        <label for="warrior">Warrior</label>
+      </fieldset>
+      
+      <fieldset name="nature">
+        <legend>Nature</legend>
+        <input type="checkbox" name="nature" id="man" value="Man" checked />
+        <label for="man">Man</label>
+        <input type="checkbox" name="nature" id="woman" value="Woman" checked />
+        <label for="woman">Woman</label>
+        <input type="checkbox" name="nature" id="child" value="Child" checked />
+        <label for="child">Child</label>
+        <input type="checkbox" name="nature" id="being" value="Being" checked />
+        <label for="being">Being</label>
+        <input type="checkbox" name="nature" id="fairy" value="Fairy" checked />
+        <label for="fairy">Fairy</label>
+        <input type="checkbox" name="nature" id="fiend" value="Fiend" checked />
+        <label for="Fiend">Fiend</label>
+        <input type="checkbox" name="nature" id="machine" value="Machine" checked />
+        <label for="machine">Machine</label>
+        <input type="checkbox" name="nature" id="holy" value="Holy" checked />
+        <label for="holy">Holy</label>
+      </fieldset>
+      
+      <button type="button" onclick="processForm(this.form);">Draft Teams</button>
+      
+    </form>
+    
+    <div>
+      <table>
+        <tr id="header"></tr>
+        <tr id="teams"></tr>
+      </table>
+    </div>
+    
+  </body>
+</html>

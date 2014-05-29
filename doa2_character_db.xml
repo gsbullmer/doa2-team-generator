@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  
+  <categories>
+    
+    <set>
+      <item>Basic</item>
+      <item>Master</item>
+    </set>
+    
+    <age>
+      <item>Ancient</item>
+      <item>Colonial</item>
+      <item>Modern</item>
+      <item>Future</item>
+    </age>
+    
+    <setting>
+      <item age="Ancient">Epic Heroes</item>
+      <item age="Ancient">Faer</item>
+      <item age="Ancient">Chasms</item>
+      <item age="Colonial">Lands West</item>
+      <item age="Colonial">Folktales</item>
+      <item age="Colonial">Horizons</item>
+      <item age="Modern">Age of Crisis</item>
+      <item age="Modern">The Underground</item>
+      <item age="Modern">Strange Times</item>
+      <item age="Future">Altspace</item>
+      <item age="Future">Starmarch</item>
+      <item age="Future">Forty Worlds</item>
+    </setting>
+    
+    <circle>
+      <item>Adventurer</item>
+      <item>Commoner</item>
+      <item>Defender</item>
+      <item>Exemplar</item>
+      <item>Icon</item>
+      <item>Lord</item>
+      <item>Outcast</item>
+      <item>Villain</item>
+      <item>Warrior</item>
+    </circle>
+    
+    <nature>
+      <item>Man</item>
+      <item>Woman</item>
+      <item>Child</item>
+      <item>Being</item>
+      <item>Fairy</item>
+      <item>Fiend</item>
+      <item>Machine</item>
+      <item>Holy</item>
+    </nature>
+  
+  </categories>
+  
+  <characters>
+    <character id="1" set="Basic" name="Frostdancer" title="The Graceful Warrior" age="Ancient" setting="Epic Heroes" circle="Defender" nature="Woman" stats="7,3,8,9,4,2,2,4,5,9,8,2,4,5,6,5" />
+    <character id="2" set="Basic" name="Jade" title="The Unicorn" age="Ancient" setting="Faer" circle="Exemplar" nature="Fairy" stats=",,,,,,,,,,,,,,," />
+    <character id="3" set="Basic" name="Kiri Silvertip" title="The Winged Warrior Maid" age="Ancient" setting="Chasms" circle="Icon" nature="Fairy" stats=",,,,,,,,,,,,,,," />
+    <character id="4" set="Basic" name="Kraator" title="The Barbarian" age="Ancient" setting="Chasms" circle="Adventurer" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="5" set="Basic" name="Minx and Jinx" title="The Little People" age="Ancient" setting="Faer" circle="Commoner" nature="Fairy" stats=",,,,,,,,,,,,,,," />
+    <character id="6" set="Basic" name="Mulgoth Dominant" title="The Infernal Construct" age="Ancient" setting="Faer" circle="Villain" nature="Fiend" stats=",,,,,,,,,,,,,,," />
+    <character id="7" set="Basic" name="Perindor" title="The Ranger" age="Ancient" setting="Chasms" circle="Adventurer" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="8" set="Basic" name="Phillip Redlegs" title="The Adventurer" age="Ancient" setting="Chasms" circle="Adventurer" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="9" set="Basic" name="Siennya, Queen's-Daughter" title="The Amazon" age="Ancient" setting="Faer" circle="Lord" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="10" set="Basic" name="Sir Gawain" title="The Knight" age="Ancient" setting="Epic Heroes" circle="Exemplar" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="11" set="Basic" name="Spartacus" title="The Gladiator" age="Ancient" setting="Epic Heroes" circle="Lord" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="12" set="Basic" name="William Wallace" title="The Inspiring Leader" age="Ancient" setting="Epic Heroes" circle="Lord" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="13" set="Basic" name="Annie Oakley" title="The Trick Shot" age="Colonial" setting="Lands West" circle="Icon" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="14" set="Basic" name="Davy Crockett" title="The Backwoodsman" age="Colonial" setting="Lands West" circle="Adventurer" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="15" set="Basic" name="Diaz El Gato" title="The Blademaster" age="Colonial" setting="Folktales" circle="Commoner" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="16" set="Basic" name="Geronimo" title="The War Chief" age="Colonial" setting="Lands West" circle="Lord" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="17" set="Basic" name="Kit Carson" title="The Scout" age="Colonial" setting="Lands West" circle="Adventurer" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="18" set="Basic" name="Leo Penney" title="The Gambler" age="Colonial" setting="Lands West" circle="Icon" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="19" set="Basic" name="Little Shaun" title="The Ironman" age="Colonial" setting="Horizons" circle="Commoner" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="20" set="Basic" name="Pat Garrett" title="The Lawman" age="Colonial" setting="Lands West" circle="Defender" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="21" set="Basic" name="Blackbeard" title="The Pirate" age="Colonial" setting="Horizons" circle="Villain" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="22" set="Basic" name="Stephen Decatur" title="The Swashbuckler" age="Colonial" setting="Horizons" circle="Lord" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="23" set="Basic" name="The Scarlet Vixen" title="The Rogue" age="Colonial" setting="Folktales" circle="Outcast" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="24" set="Basic" name="York" title="The Foot Soldier" age="Colonial" setting="Horizons" circle="Warrior" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="25" set="Basic" name="A Pile of Weewaks" title="The Horde" age="Future" setting="Altspace" circle="Lord" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="26" set="Basic" name="Ardin Glynn" title="The Envoy" age="Future" setting="Starmarch" circle="Defender" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="27" set="Basic" name="Cayriss" title="The Saurian" age="Future" setting="Starmarch" circle="Commoner" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="28" set="Basic" name="Devon Regal" title="The Raider" age="Future" setting="Forty Worlds" circle="Outcast" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="29" set="Basic" name="Erin Shrike" title="The Recon" age="Future" setting="Forty Worlds" circle="Adventurer" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="30" set="Basic" name="Grok" title="The Brute" age="Future" setting="Altspace" circle="Warrior" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="31" set="Basic" name="Misty Corona" title="The Perky Space Cadet" age="Future" setting="Altspace" circle="Exemplar" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="32" set="Basic" name="Suva of Orian" title="The Honorable Alien" age="Future" setting="Forty Worlds" circle="Exemplar" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="33" set="Basic" name="Syriach" title="The Warrior Race" age="Future" setting="Starmarch" circle="Villain" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="34" set="Basic" name="Titanium Renegade" title="The Cyborg" age="Future" setting="Altspace" circle="Warrior" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="35" set="Basic" name="Venya 8" title="The Android Agent" age="Future" setting="Starmarch" circle="Warrior" nature="Machine" stats=",,,,,,,,,,,,,,," />
+    <character id="36" set="Basic" name="Victoria" title="The Daredevil" age="Future" setting="Forty Worlds" circle="Icon" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="37" set="Basic" name="Ace Cannon" title="The Quarterback" age="Modern" setting="Age of Crisis" circle="Icon" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="38" set="Basic" name="Amanda Pierce" title="The Freelancer" age="Modern" setting="The Underground" circle="Outcast" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="39" set="Basic" name="Boris Andronov" title="The Mercenary" age="Modern" setting="The Underground" circle="Warrior" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="40" set="Basic" name="Bruno Brincelli" title="The Muscle" age="Modern" setting="The Underground" circle="Villain" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="41" set="Basic" name="Dingo Jake" title="The Bushmaster" age="Modern" setting="Age of Crisis" circle="Adventurer" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="42" set="Basic" name="First Marine Quog" title="The Bug-Eyed Alien" age="Modern" setting="Strange Times" circle="Villain" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="43" set="Basic" name="Gen. James Gavin" title="The Field General" age="Modern" setting="Age of Crisis" circle="Lord" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="44" set="Basic" name="Ironhead McCray" title="The Boxer" age="Modern" setting="Age of Crisis" circle="Icon" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="45" set="Basic" name="Jack Hammer" title="The Lone Wolf" age="Modern" setting="The Underground" circle="Defender" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="46" set="Basic" name="Martians" title="The Little Green Men" age="Modern" setting="Strange Times" circle="Adventurer" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="47" set="Basic" name="Pvt. Sanchez" title="The Sniper" age="Modern" setting="Age of Crisis" circle="Warrior" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="48" set="Basic" name="Sgt. Gritt" title="The Sarge" age="Modern" setting="Age of Crisis" circle="Warrior" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="49" set="Master" name="Arkin Ironshanks" title="The Dwarf" age="Ancient" setting="Chasms" circle="Warrior" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="50" set="Master" name="Avindel" title="The Elf" age="Ancient" setting="Chasms" circle="Exemplar" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="51" set="Master" name="Boudica" title="The Hand of Vengeance" age="Ancient" setting="Epic Heroes" circle="Lord" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="52" set="Master" name="Nimsea" title="The Nuisance" age="Ancient" setting="Faer" circle="Adventurer" nature="Fairy" stats=",,,,,,,,,,,,,,," />
+    <character id="52" set="Master" name="Flicker" title="The Stealthmistress" age="Ancient" setting="Faer" circle="Outcast" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="54" set="Master" name="Orpithu" title="The Cave Monster" age="Ancient" setting="Chasms" circle="Villain" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="55" set="Master" name="Perseus" title="The Pawn of the Gods" age="Ancient" setting="Epic Heroes" circle="Icon" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="56" set="Master" name="Roaringrock" title="The Beast King" age="Ancient" setting="Faer" circle="Lord" nature="Fairy" stats=",,,,,,,,,,,,,,," />
+    <character id="57" set="Master" name="Robin Hood" title="The Woodsman" age="Ancient" setting="Epic Heroes" circle="Icon" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="58" set="Master" name="Ronin Sajiro" title="The Samurai" age="Ancient" setting="Epic Heroes" circle="Warrior" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="59" set="Master" name="Thump" title="The Giant" age="Ancient" setting="Chasms" circle="Commoner" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="60" set="Master" name="Ulshasa" title="The Fire Dweller" age="Ancient" setting="Faer" circle="Commoner" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="61" set="Master" name="Piccolo" title="The Artsmaster" age="Colonial" setting="Horizons" circle="Exemplar" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="62" set="Master" name="Cassie Sashay" title="The Cowgirl" age="Colonial" setting="Lands West" circle="Commoner" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="63" set="Master" name="Darija Dugrebsky" title="The Countess" age="Colonial" setting="Folktales" circle="Lord" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="64" set="Master" name="Ivymane" title="The Wood Fay" age="Colonial" setting="Folktales" circle="Icon" nature="Fairy" stats=",,,,,,,,,,,,,,," />
+    <character id="65" set="Master" name="Jolie La Ravissant" title="The Charmer" age="Colonial" setting="Horizons" circle="Icon" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="66" set="Master" name="Lianka The Gazer" title="The Scoundrel" age="Colonial" setting="Folktales" circle="Outcast" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="67" set="Master" name="Marley Kenyon" title="The Gadget Master" age="Colonial" setting="Horizons" circle="Defender" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="68" set="Master" name="Napoleon" title="The Tactician" age="Colonial" setting="Horizons" circle="Lord" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="69" set="Master" name="Perry Owens" title="The Bounty Hunter" age="Colonial" setting="Lands West" circle="Defender" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="70" set="Master" name="Princess Sunglow" title="The Dainty Princess" age="Colonial" setting="Folktales" circle="Exemplar" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="71" set="Master" name="Wintercreak" title="The Tree Creature" age="Colonial" setting="Folktales" circle="Exemplar" nature="Fairy" stats=",,,,,,,,,,,,,,," />
+    <character id="72" set="Master" name="Xin The She-Kelpie" title="The Mistrusted" age="Colonial" setting="Folktales" circle="Outcast" nature="Fairy" stats=",,,,,,,,,,,,,,," />
+    <character id="73" set="Master" name="Ettamerra" title="The Mother" age="Future" setting="Forty Worlds" circle="Defender" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="74" set="Master" name="Leapgrip" title="The Honorbound Hunter" age="Future" setting="Forty Worlds" circle="Exemplar" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="75" set="Master" name="Marcus Aurus" title="The Genetic Superhuman" age="Future" setting="Starmarch" circle="Outcast" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="76" set="Master" name="Mogred Ghan" title="The Alien Crime Lord" age="Future" setting="Altspace" circle="Lord" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="77" set="Master" name="Quaal" title="The Matriarch" age="Future" setting="Starmarch" circle="Lord" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="78" set="Master" name="Raygun Roger" title="The Gallant Space Hero" age="Future" setting="Altspace" circle="Defender" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="79" set="Master" name="Reaver Mk. VII" title="The Battered War Machine" age="Future" setting="Starmarch" circle="Warrior" nature="Machine" stats=",,,,,,,,,,,,,,," />
+    <character id="80" set="Master" name="Seveneyes" title="The Seer" age="Future" setting="Starmarch" circle="Exemplar" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="81" set="Master" name="Tanika" title="The Young Heroine" age="Future" setting="Forty Worlds" circle="Adventurer" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="82" set="Master" name="The Weinstein Brothers" title="The Tinkerers" age="Future" setting="Altspace" circle="Commoner" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="83" set="Master" name="Vaxiss" title="The Agile Alien" age="Future" setting="Forty Worlds" circle="Adventurer" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="84" set="Master" name="Zane Starblazer" title="The Boy Wonder" age="Future" setting="Altspace" circle="Adventurer" nature="Child" stats=",,,,,,,,,,,,,,," />
+    <character id="85" set="Master" name="Agent 911" title="The Bumbling Idiot" age="Modern" setting="Strange Times" circle="Defender" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="86" set="Master" name="Annah Mischkev" title="The International Spy" age="Modern" setting="The Underground" circle="Defender" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="87" set="Master" name="Baron Von Krule" title="The Master Villain" age="Modern" setting="Strange Times" circle="Villain" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="88" set="Master" name="Boolean" title="The Hacker" age="Modern" setting="The Underground" circle="Outcast" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="89" set="Master" name="Coach Quinn" title="The Coach" age="Modern" setting="Age of Crisis" circle="Exemplar" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="90" set="Master" name="Hamid Al-Duri" title="The Survivor" age="Modern" setting="Age of Crisis" circle="Outcast" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="91" set="Master" name="Jerry Gillis" title="The Survivalist" age="Modern" setting="Strange Times" circle="Commoner" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="92" set="Master" name="Joe Tascoe" title="The Trailer Park Hero" age="Modern" setting="Strange Times" circle="Commoner" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="93" set="Master" name="Lia Vestri" title="The Test Subject" age="Modern" setting="Strange Times" circle="Adventurer" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="94" set="Master" name="Nerve Puppet" title="The Parasite" age="Modern" setting="Strange Times" circle="Villain" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="95" set="Master" name="Smoke" title="The Infiltrator" age="Modern" setting="The Underground" circle="Defender" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="96" set="Master" name="Ygunna Gecha" title="The Bad Girl" age="Modern" setting="The Underground" circle="Villain" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="97" set="Master" name="Adigan The Rat" title="The Bold Midgeling" age="Ancient" setting="Faer" circle="Warrior" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="98" set="Master" name="Atalanta" title="The Agitator" age="Ancient" setting="Epic Heroes" circle="Adventurer" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="99" set="Master" name="Beowulf" title="The Mythical Hero" age="Ancient" setting="Epic Heroes" circle="Icon" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="100" set="Master" name="El Cid" title="The Tragic Hero" age="Ancient" setting="Epic Heroes" circle="Lord" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="101" set="Master" name="Enrak The Fury" title="The Berserker" age="Ancient" setting="Faer" circle="Warrior" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="102" set="Master" name="Gana" title="The Mimic" age="Ancient" setting="Faer" circle="Outcast" nature="Fairy" stats=",,,,,,,,,,,,,,," />
+    <character id="103" set="Master" name="Genghis Khan" title="The Tyrant" age="Ancient" setting="Epic Heroes" circle="Villain" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="104" set="Master" name="Kassina" title="The Dragon Queen" age="Ancient" setting="Chasms" circle="Lord" nature="Fairy" stats=",,,,,,,,,,,,,,," />
+    <character id="105" set="Master" name="Rizzik The Red" title="The Wizard" age="Ancient" setting="Chasms" circle="Defender" nature="Fairy" stats=",,,,,,,,,,,,,,," />
+    <character id="106" set="Master" name="Sven the Netmender" title="The Young Hero" age="Ancient" setting="Faer" circle="Icon" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="107" set="Master" name="Ylsa" title="The Elementalist" age="Ancient" setting="Chasms" circle="Adventurer" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="108" set="Master" name="Yori Blackpad" title="The Cave Dweller" age="Ancient" setting="Chasms" circle="Defender" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="109" set="Master" name="Bill Hickok" title="The Gunslinger" age="Colonial" setting="Lands West" circle="Icon" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="110" set="Master" name="Giuseppe Garibaldi" title="The Patriot" age="Colonial" setting="Horizons" circle="Adventurer" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="111" set="Master" name="Headless Horseman" title="The Rural Legend" age="Colonial" setting="Folktales" circle="Villain" nature="Fiend" stats=",,,,,,,,,,,,,,," />
+    <character id="112" set="Master" name="Jenny McGiddey" title="The Crafty Peasant" age="Colonial" setting="Folktales" circle="Commoner" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="113" set="Master" name="Lt. Percy Smith" title="The Dutiful Soldier" age="Colonial" setting="Horizons" circle="Warrior" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="114" set="Master" name="Mildred Stonegutter" title="The Battleaxe" age="Colonial" setting="Folktales" circle="Commoner" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="115" set="Master" name="Ned Kelly" title="The Outcast" age="Colonial" setting="Horizons" circle="Outcast" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="116" set="Master" name="Red River Roy" title="The Happy Cowboy" age="Colonial" setting="Lands West" circle="Exemplar" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="117" set="Master" name="Robert Morris" title="The Financier" age="Colonial" setting="Horizons" circle="Icon" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="118" set="Master" name="Santiago El Robusto" title="The Honcho" age="Colonial" setting="Lands West" circle="Villain" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="119" set="Master" name="Tex" title="The Range Rider" age="Colonial" setting="Lands West" circle="Commoner" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="120" set="Master" name="The Iron Pole" title="The Tall Tale" age="Colonial" setting="Folktales" circle="Commoner" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="121" set="Master" name="Bladed Terror" title="The Deadly Life Form" age="Future" setting="Starmarch" circle="Villain" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="122" set="Master" name="Commodore Blaylock" title="The Commander" age="Future" setting="Altspace" circle="Lord" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="123" set="Master" name="Corporal Janus" title="The Bug Hunter" age="Future" setting="Starmarch" circle="Warrior" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="124" set="Master" name="Fanged Tracnids" title="The Multipliers" age="Future" setting="Starmarch" circle="Outcast" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="125" set="Master" name="Lyrra Swan" title="The Time Agent" age="Future" setting="Altspace" circle="Defender" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="126" set="Master" name="Odessa of Omri" title="The Aristocrat" age="Future" setting="Forty Worlds" circle="Icon" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="127" set="Master" name="Onyra of Omri" title="The Schemer" age="Future" setting="Forty Worlds" circle="Lord" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="128" set="Master" name="Ophelia of Omri" title="The Idealist" age="Future" setting="Forty Worlds" circle="Exemplar" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="129" set="Master" name="Paragonia" title="The Do-Good" age="Future" setting="Altspace" circle="Defender" nature="Machine" stats=",,,,,,,,,,,,,,," />
+    <character id="130" set="Master" name="Pyraxian" title="The Crystal Being" age="Future" setting="Starmarch" circle="Commoner" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="131" set="Master" name="Ryder" title="The Adept" age="Future" setting="Altspace" circle="Exemplar" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="132" set="Master" name="Xecttyl" title="The Hive Mother" age="Future" setting="Forty Worlds" circle="Outcast" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="133" set="Master" name="Zoe Burroughs" title="The Mole" age="Modern" setting="The Underground" circle="Outcast" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="134" set="Master" name="Eliot Ness" title="The Crime Fighter" age="Modern" setting="The Underground" circle="Defender" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="135" set="Master" name="Erik Merit" title="The Retired Elite" age="Modern" setting="Age of Crisis" circle="Warrior" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="136" set="Master" name="Fen Lin" title="The Kung Fu Master" age="Modern" setting="Strange Times" circle="Defender" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="137" set="Master" name="Helene Lang" title="The Mountaineer" age="Modern" setting="The Underground" circle="Adventurer" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="138" set="Master" name="Henry Kirk" title="The Family Man" age="Modern" setting="Age of Crisis" circle="Exemplar" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="139" set="Master" name="Homer Morgan" title="The Slugger" age="Modern" setting="Age of Crisis" circle="Icon" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="140" set="Master" name="Joshua Jordan" title="The Superhero" age="Modern" setting="Strange Times" circle="Icon" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="141" set="Master" name="Miranda Fade" title="The Escape Artist" age="Modern" setting="The Underground" circle="Adventurer" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="142" set="Master" name="Thotus" title="The Pulsating Brain" age="Modern" setting="Strange Times" circle="Villain" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="143" set="Master" name="Tomiji Hamaki" title="The Eccentric Genius" age="Modern" setting="Age of Crisis" circle="Exemplar" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="144" set="Master" name="Whisper" title="The Secret Superhero" age="Modern" setting="Strange Times" circle="Outcast" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="145" set="Master" name="Baba Yaga" title="The Hag" age="Ancient" setting="Epic Heroes" circle="Villain" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="146" set="Master" name="Daylight and Dusk" title="The Lovers" age="Ancient" setting="Epic Heroes" circle="Exemplar" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="147" set="Master" name="Finnabar Taint" title="The Pessimist" age="Ancient" setting="Faer" circle="Defender" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="148" set="Master" name="Gregory" title="The Healer" age="Ancient" setting="Epic Heroes" circle="Exemplar" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="149" set="Master" name="Greymede" title="The Faithful Companion" age="Ancient" setting="Chasms" circle="Outcast" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="150" set="Master" name="Illinth" title="The Growing Threat" age="Ancient" setting="Chasms" circle="Villain" nature="Fiend" stats=",,,,,,,,,,,,,,," />
+    <character id="151" set="Master" name="Koguryo" title="The Oath Warrior" age="Ancient" setting="Epic Heroes" circle="Warrior" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="152" set="Master" name="Neyana Unyielding" title="The Paladin" age="Ancient" setting="Chasms" circle="Defender" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="153" set="Master" name="Norz Madfang" title="The Beastrider" age="Ancient" setting="Chasms" circle="Adventurer" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="154" set="Master" name="Paradox" title="The Bizarre" age="Ancient" setting="Faer" circle="Outcast" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="155" set="Master" name="Sir Bodkin" title="The Prudent" age="Ancient" setting="Faer" circle="Icon" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="156" set="Master" name="Undenbog" title="The Amphibian" age="Ancient" setting="Faer" circle="Commoner" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="157" set="Master" name="Aramis" title="The Romantic" age="Colonial" setting="Folktales" circle="Exemplar" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="158" set="Master" name="Benedict Arnold" title="The Traitor" age="Colonial" setting="Horizons" circle="Warrior" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="159" set="Master" name="Chief Joseph" title="The Native" age="Colonial" setting="Lands West" circle="Lord" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="160" set="Master" name="Clara Barton" title="The Humanitarian" age="Colonial" setting="Horizons" circle="Exemplar" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="161" set="Master" name="Dr. Hume" title="The Invisible Man" age="Colonial" setting="Folktales" circle="Villain" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="162" set="Master" name="Dr. Memnar" title="The Mad Scientist" age="Colonial" setting="Folktales" circle="Villain" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="163" set="Master" name="Jedediah Smith" title="The Mountain Man" age="Colonial" setting="Lands West" circle="Adventurer" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="164" set="Master" name="Kidd" title="The Outlaw" age="Colonial" setting="Lands West" circle="Villain" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="165" set="Master" name="Kristina Karlsdotter" title="The Runner" age="Colonial" setting="Horizons" circle="Warrior" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="166" set="Master" name="Prince Wallard Blatt" title="The Time Prisoner" age="Colonial" setting="Folktales" circle="Icon" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="167" set="Master" name="Sheridan" title="The Cavalryman" age="Colonial" setting="Horizons" circle="Warrior" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="168" set="Master" name="Sterling Jack" title="The Con Man" age="Colonial" setting="Lands West" circle="Outcast" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="169" set="Master" name="Camden Drake" title="The Engineer" age="Future" setting="Starmarch" circle="Exemplar" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="170" set="Master" name="Damon Raven" title="The Assassin" age="Future" setting="Starmarch" circle="Outcast" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="171" set="Master" name="Dr. Marla Ulf" title="The Physicist" age="Future" setting="Altspace" circle="Icon" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="172" set="Master" name="Dr. Pennopolis" title="The Mentor" age="Future" setting="Forty Worlds" circle="Icon" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="173" set="Master" name="Merissa of Ravenna" title="The Revered Icon" age="Future" setting="Starmarch" circle="Lord" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="174" set="Master" name="Shifter" title="The Adapter" age="Future" setting="Altspace" circle="Commoner" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="175" set="Master" name="Specialist Njeri" title="The Medic" age="Future" setting="Forty Worlds" circle="Warrior" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="176" set="Master" name="Thorn" title="The Opportunist" age="Future" setting="Altspace" circle="Outcast" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="177" set="Master" name="Three-U" title="The Energy Being" age="Future" setting="Starmarch" circle="Outcast" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="178" set="Master" name="TIAX Assassin" title="The Killing Machine" age="Future" setting="Altspace" circle="Villain" nature="Machine" stats=",,,,,,,,,,,,,,," />
+    <character id="179" set="Master" name="Zera Kail" title="The Sharpshooter" age="Future" setting="Forty Worlds" circle="Adventurer" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="180" set="Master" name="Zygoid" title="The Plant Creature" age="Future" setting="Forty Worlds" circle="Villain" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="181" set="Master" name="Big Herr" title="The Rock Star" age="Modern" setting="The Underground" circle="Icon" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="182" set="Master" name="Brad" title="The Slacker" age="Modern" setting="Strange Times" circle="Commoner" nature="Child" stats=",,,,,,,,,,,,,,," />
+    <character id="183" set="Master" name="Catspaw" title="The Mindbender" age="Modern" setting="Strange Times" circle="Commoner" nature="Child" stats=",,,,,,,,,,,,,,," />
+    <character id="184" set="Master" name="Dirk Slade" title="The Tough Guy" age="Modern" setting="The Underground" circle="Outcast" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="185" set="Master" name="Hakan" title="The Dictator" age="Modern" setting="Age of Crisis" circle="Lord" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="186" set="Master" name="Ian Welsh" title="The Secret Agent" age="Modern" setting="The Underground" circle="Defender" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="187" set="Master" name="Milena Arrebato" title="The Freedom Fighter" age="Modern" setting="Age of Crisis" circle="Lord" nature="Woman" stats=",,,,,,,,,,,,,,," />
+    <character id="188" set="Master" name="Mr. Catskill" title="The Vigilante" age="Modern" setting="The Underground" circle="Defender" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="189" set="Master" name="Ryan Knight" title="The Investigator" age="Modern" setting="Strange Times" circle="Defender" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="190" set="Master" name="Sandman" title="The Urban Legend" age="Modern" setting="Strange Times" circle="Commoner" nature="Being" stats=",,,,,,,,,,,,,,," />
+    <character id="191" set="Master" name="Walrus" title="The Rescuer" age="Modern" setting="Age of Crisis" circle="Commoner" nature="Man" stats=",,,,,,,,,,,,,,," />
+    <character id="192" set="Master" name="Wilder" title="The Guerrilla" age="Modern" setting="Age of Crisis" circle="Warrior" nature="Man" stats=",,,,,,,,,,,,,,," />
+  </characters>
+  
+</xml>
