@@ -14,5 +14,14 @@ function Category(xml) {
   window.console.log("Category created");
 }
 
+/**
+ * Object Property Name
+ * @type {String}
+ */
 Category.prototype.name = '';
+
+/**
+ * List of all children in this category
+ * @type {Array}
+ */
 Category.prototype.items = [];
