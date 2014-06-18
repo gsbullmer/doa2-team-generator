@@ -1,2 +1,5 @@
 bower_components
 node_modules
+.tmp
+build/*.js
+build/*.css
