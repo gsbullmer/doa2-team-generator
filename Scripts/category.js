@@ -1,3 +1,10 @@
+/**
+ * Category
+ *
+ * This function is designed to be a base 'class' for category related things
+ *
+ * @param {XML} xml the data to be passed into a Category object
+ */
 function Category(xml) {
   this.name = xml.tagName;
   this.items = [];
