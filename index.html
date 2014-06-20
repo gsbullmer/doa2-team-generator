@@ -3,21 +3,21 @@
   <head>
     <meta charset="UTF-8">
     <title>Duel of Ages II Team Generator</title>
-    
+
     <script type="text/javascript" src="build/main.min.js"></script>
-    
+
     <script type="text/javascript">
       loadXML("doa2_character_db.xml");
     </script>
-    
+
     <link rel="stylesheet" href="build/main.min.css">
   </head>
   <body>
     <h1>Duel of Ages II Team Generator</h1>
     <h2>Setup Options</h2>
-    
+
     <form onsubmit="return false;">
-      
+
       <fieldset name="required">
         <legend>Required</legend>
         <span>Number of Teams:</span>
@@ -36,11 +36,11 @@
           <option value="pure" selected>Pure</option>
           <option value="draft">Draft</option>
         </select>
-        
+
         <span>Extra Characters: </span>
         <input type="number" name="numXChars" min="0" max="99" maxlength="2" size="2" step="1" value="4" disabled />
       </fieldset>
-      
+
       <fieldset name="set">
         <legend>Set</legend>
         <input type="checkbox" name="set" id="basic" value="Basic" checked />
@@ -48,7 +48,7 @@
         <input type="checkbox" name="set" id="master" value="Master" checked />
         <label for="master">Master</label>
       </fieldset>
-      
+
       <fieldset name="ageSet">
         <legend>Age &amp; Setting</legend>
         <table>
@@ -132,7 +132,7 @@
           </tbody>
         </table>
       </fieldset>
-      
+
       <fieldset name="circle">
         <legend>Circle</legend>
         <input type="checkbox" name="circle" id="adventurer" value="Adventurer" checked />
@@ -154,7 +154,7 @@
         <input type="checkbox" name="circle" id="warrior" value="Warrior" checked />
         <label for="warrior">Warrior</label>
       </fieldset>
-      
+
       <fieldset name="nature">
         <legend>Nature</legend>
         <input type="checkbox" name="nature" id="man" value="Man" checked />
@@ -174,17 +174,17 @@
         <input type="checkbox" name="nature" id="holy" value="Holy" checked />
         <label for="holy">Holy</label>
       </fieldset>
-      
+
       <button type="button" onclick="processForm(this.form);">Draft Teams</button>
-      
+
     </form>
-    
+
     <div>
       <table>
         <tr id="header"></tr>
         <tr id="teams"></tr>
       </table>
     </div>
-    
+
   </body>
 </html>
