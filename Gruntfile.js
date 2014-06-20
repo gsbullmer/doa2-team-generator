@@ -38,6 +38,13 @@ module.exports = function (grunt) {
       ]
     },
 
+    uglify: {
+      all: {
+        src: '.tmp/main.js',
+        dest: 'build/main.min.js'
+      }
+    },
+
     concat: {
       all: {
         src: 'src/scripts/*',
@@ -68,10 +75,10 @@ module.exports = function (grunt) {
         'clean',
         'less',
         'csslint',
-        // 'cssmin',
+        'cssmin',
         'jshint',
-        'concat'
-        // 'uglify'
+        'concat',
+        'uglify'
       ];
     }
     // Development Build
