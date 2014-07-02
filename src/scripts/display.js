@@ -1,4 +1,4 @@
-function displayTeams(teams, numTeams) {
+function setTeams(teams, numTeams) {
   var headerText = '';
   var teamsText = '';
     
@@ -22,4 +22,24 @@ function displayTeams(teams, numTeams) {
   
   hNode.innerHTML = headerText;
   tNode.innerHTML = teamsText;
+}
+
+function hideForm() {
+  var fForm = document.getElementById("fForm");
+  fForm.style.display = 'none';
+}
+
+function showForm() {
+  var fForm = document.getElementById("fForm");
+  fForm.style.display = 'block';
+}
+
+function hideTeams() {
+  var tList = document.getElementById("tOutput");
+  tList.style.display = 'none';
+}
+
+function showTeams() {
+  var tList = document.getElementById("tOutput");
+  tList.style.display = 'block';
 }

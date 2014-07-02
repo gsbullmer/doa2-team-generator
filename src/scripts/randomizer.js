@@ -15,7 +15,9 @@ function randomize(charList, numTeams, numChars, draft, xChars) {
       break;
   }
   
-  displayTeams(teams, numTeams);
+  setTeams(teams, numTeams);
+  hideForm();
+  showTeams();
 }
 
 function draftStandard(list, numTeams, numChars, xChars) {
