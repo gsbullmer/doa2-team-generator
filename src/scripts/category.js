@@ -1,3 +1,10 @@
+/**
+ * Category
+ *
+ * This function is designed to be a base 'class' for category related things
+ *
+ * @param {XML} xml the data to be passed into a Category object
+ */
 function Category(xml) {
   this.name = xml.tagName;
   this.items = [];
@@ -14,5 +21,14 @@ function Category(xml) {
   window.console.log("Category created");
 }
 
+/**
+ * Object Property Name
+ * @type {String}
+ */
 Category.prototype.name = '';
+
+/**
+ * List of all children in this category
+ * @type {Array}
+ */
 Category.prototype.items = [];
