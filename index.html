@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <title>Duel of Ages II Team Generator</title>
 
-    <script type="text/javascript" src="build/main.min.js"></script>
-
-    <script type="text/javascript">
-      loadXML("doa2_character_db.xml");
-    </script>
 
     <link rel="stylesheet" href="build/main.min.css">
   </head>
@@ -31,7 +26,7 @@
         <input type="number" name="numChars" min="1" max="99" maxlength="2" size="2" step="1" value="8" required />
 
         <span>Draft Type: </span>
-        <select name="draft" required onchange="checkDraft(this)">
+        <select id="draft_type" name="draft" required >
           <option value="standard">Standard</option>
           <option value="pure" selected>Pure</option>
           <option value="draft">Draft</option>
@@ -239,4 +234,6 @@
     </div>
 
   </body>
+
+  <script type="text/javascript" src="build/main.min.js"></script>
 </html>
