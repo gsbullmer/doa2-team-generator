@@ -1,4 +1,4 @@
-define(['display'], function (displayTeams) {
+define(['display'], function (display) {
   'use strict';
 
   var Randomizer = {
@@ -19,7 +19,9 @@ define(['display'], function (displayTeams) {
           break;
       }
 
-      displayTeams(teams, numTeams);
+      display.setTeams(teams, numTeams);
+      display.hideForm();
+      display.showTeams();
     },
 
     draftStandard: function(list, numTeams, numChars, xChars) {

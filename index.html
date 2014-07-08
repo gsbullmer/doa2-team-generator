@@ -9,9 +9,9 @@
   </head>
   <body>
     <h1>Duel of Ages II Team Generator</h1>
-    <h2>Setup Options</h2>
 
-    <form onsubmit="return false;">
+    <form id='fForm' onsubmit="return false;">
+      <h2>Setup Options</h2>
 
       <fieldset name="required">
         <legend>Required</legend>
@@ -226,11 +226,13 @@
 
     </form>
 
-    <div>
+    <div id='tOutput' class='teamOutput'>
+      <h2>Teams</h2>
       <table>
         <tr id="header"></tr>
         <tr id="teams"></tr>
       </table>
+      <button type="button" id="reset_button">Reset Teams</button>
     </div>
 
   </body>

@@ -5,8 +5,9 @@ require(['config'], function () {
     'lib/evt',
     'xmlParse',
     'processForm',
-    'character_collection'
-  ], function (evt, xmlParse, processForm, Character_collection) {
+    'character_collection',
+    'display'
+  ], function (evt, xmlParse, processForm, Character_collection, display) {
       var Characters = new Character_collection();
       xmlParse.loadXML(Characters, "doa2_character_db.xml");
 
@@ -22,6 +23,8 @@ require(['config'], function () {
       var submit = document.getElementById('submit_form');
       evt.bind(submit, 'click', processForm.processForm.bind(this, Characters));
 
+      var reset = document.getElementById('reset_button');
+      evt.bind(reset, 'click', display.resetForm.bind(display));
     }
   );
 });

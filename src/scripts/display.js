@@ -1,7 +1,8 @@
 define([], function () {
   'use strict';
 
-  var displayTeams = function(teams, numTeams) {
+  var display = {
+    setTeams: function(teams, numTeams) {
       var headerText = '';
       var teamsText = '';
 
@@ -25,7 +26,31 @@ define([], function () {
 
       hNode.innerHTML = headerText;
       tNode.innerHTML = teamsText;
+    },
+    hideForm: function () {
+      var fForm = document.getElementById("fForm");
+      fForm.style.display = 'none';
+    },
+
+    showForm: function () {
+      var fForm = document.getElementById("fForm");
+      fForm.style.display = 'block';
+    },
+
+    hideTeams: function () {
+      var tList = document.getElementById("tOutput");
+      tList.style.display = 'none';
+    },
+
+    showTeams: function () {
+      var tList = document.getElementById("tOutput");
+      tList.style.display = 'block';
+    },
+    resetForm: function () {
+      this.showForm();
+      this.hideTeams();
+    }
   };
 
-  return displayTeams;
+  return display;
 });

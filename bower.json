@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "homepage": "https://github.com/gsbullmer/doa2-team-generator",
   "authors": [
-    "Adam Bullmer <psycodrumfreak@gmail.com>"
+    "Adam Bullmer <psycodrumfreak@gmail.com>",
+    "Greg Bullmer <gsbullmer@gmail.com>"
   ],
   "description": "Team building app for the tabletop game Duel Of Ages 2",
   "main": "index.html",
