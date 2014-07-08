@@ -32,7 +32,7 @@ define(['display'], function (display) {
       }
       for(var i = 0; i < Number(numChars) + Number(xChars); i++) {
         for(var j = 0; j < numTeams; j++) {
-          character = list.splice(Math.round(Math.random() * list.length), 1);
+          character = list.splice(Math.round(Math.random() * list.length - 1), 1);
           teams[j].push(character[0]);
         }
       }
@@ -47,7 +47,7 @@ define(['display'], function (display) {
       }
       for(var i = 0; i < numChars; i++) {
         for(var j = 0; j < numTeams; j++) {
-          character = list.splice(Math.round(Math.random() * list.length), 1);
+          character = list.splice(Math.round(Math.random() * list.length - 1), 1);
           teams[j].push(character[0]);
         }
       }
@@ -63,7 +63,7 @@ define(['display'], function (display) {
 
       for(var i = 0; i < Number(numChars) / 2; i++) {
         for(var j = 0; j < numTeams; j++) {
-          character = list.splice(Math.round(Math.random() * list.length), 1);
+          character = list.splice(Math.round(Math.random() * list.length - 1), 1);
           teams[j].push(character[0]);
         }
       }
