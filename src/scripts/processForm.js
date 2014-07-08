@@ -15,7 +15,7 @@ define([
   var nature;
 
   var processForm = {
-    processForm: function(evt) {
+    processForm: function(character_array, evt) {
       var form = evt.target.form;
       window.console.log("processed form");
       teams = form.numTeams.value;
@@ -47,11 +47,13 @@ define([
       for(i = 0; i < form.nature.length; i++) {
         if(form.nature[i].checked) { nature.push(form.nature[i].value); }
       }
-      var filtered_list = filter.filterList(characterArray, set, age, setting, circle, nature);
+      var filtered_list = filter.filterList(character_array.get(), set, age, setting, circle, nature);
       randomizer.randomize(filtered_list, teams, chars, draft, xChars);
     },
 
-    checkClicked: function (clicked, form) {
+    checkClicked: function (evt) {
+      var clicked = evt.target;
+      var form = evt.target.form;
       var i;
       if(clicked.name === "setting") {
         for(i = 0; i < form.age.length; i++) {

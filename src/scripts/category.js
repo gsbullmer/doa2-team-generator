@@ -1,4 +1,4 @@
-require([], function () {
+define([], function () {
   /**
    * Category
    *
