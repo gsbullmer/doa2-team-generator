@@ -1,4 +1,7 @@
-define([], function () {
+define([
+  'randomizer',
+  'filter'
+], function (randomizer, filter) {
   'use strict';
 
   var teams;
@@ -12,7 +15,8 @@ define([], function () {
   var nature;
 
   var processForm = {
-    processForm: function(form) {
+    processForm: function(evt) {
+      var form = evt.target.form;
       window.console.log("processed form");
       teams = form.numTeams.value;
       chars = form.numChars.value;
@@ -20,7 +24,7 @@ define([], function () {
       xChars = form.numXChars.value;
 
       set = [];
-      for(i = 0; i < form.set.length; i++) {
+      for(var i = 0; i < form.set.length; i++) {
         if(form.set[i].checked) { set.push(form.set[i].value); }
       }
 
@@ -43,20 +47,21 @@ define([], function () {
       for(i = 0; i < form.nature.length; i++) {
         if(form.nature[i].checked) { nature.push(form.nature[i].value); }
       }
-
-      randomize(filterList(characterArray, set, age, setting, circle, nature), teams, chars, draft, xChars);
+      var filtered_list = filter.filterList(characterArray, set, age, setting, circle, nature);
+      randomizer.randomize(filtered_list, teams, chars, draft, xChars);
     },
 
     checkClicked: function (clicked, form) {
-      if(clicked.name == "setting") {
+      var i;
+      if(clicked.name === "setting") {
         for(i = 0; i < form.age.length; i++) {
-          if(form.age[i].id.substr(1,1) == clicked.id.substr(1,1)) {
+          if(form.age[i].id.substr(1,1) === clicked.id.substr(1,1)) {
             form.age[i].checked = true;
           }
         }
-      } else if(clicked.name == "age") {
+      } else if(clicked.name === "age") {
         for(i = 0; i < form.setting.length; i++) {
-          if(form.setting[i].id.substr(1,1) == clicked.id.substr(1,1)) {
+          if(form.setting[i].id.substr(1,1) === clicked.id.substr(1,1)) {
             form.setting[i].checked = false;
           }
         }
@@ -64,8 +69,8 @@ define([], function () {
     },
 
     checkDraft: function (evt) {
-      field = evt.target;
-      field.form.numXChars.disabled = (field.value == "pure") ? true : false;
+      var field = evt.target;
+      field.form.numXChars.disabled = (field.value === "pure") ? true : false;
     }
   };
 

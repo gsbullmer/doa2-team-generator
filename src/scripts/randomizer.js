@@ -1,4 +1,4 @@
-require([], function () {
+require(['display'], function (display) {
   'use strict';
 
   var Randomizer = {};
@@ -8,30 +8,31 @@ require([], function () {
     var teams;
     switch(draft) {
       case "standard":
-        teams = draftStandard(charList, numTeams, numChars, xChars);
+        teams = this.draftStandard(charList, numTeams, numChars, xChars);
         break;
 
       case "pure":
-        teams = draftPure(charList, numTeams, numChars);
+        teams = this.draftPure(charList, numTeams, numChars);
         break;
 
       case "draft":
-        teams = draftDraft(charList, numTeams, numChars, xChars);
+        teams = this.draftDraft(charList, numTeams, numChars, xChars);
         break;
     }
 
-    displayTeams(teams, numTeams);
+    display.displayTeams(teams, numTeams);
   };
 
   Randomizer.prototype.draftStandard = function(list, numTeams, numChars, xChars) {
     var teams = [];
-    for(k = 0; k < numTeams; k++) {
+    var character;
+    for(var k = 0; k < numTeams; k++) {
       teams.push([]);
     }
-    for(i = 0; i < Number(numChars) + Number(xChars); i++) {
-      for(j = 0; j < numTeams; j++) {
-        char = list.splice(Math.round(Math.random() * list.length), 1);
-        teams[j].push(char[0]);
+    for(var i = 0; i < Number(numChars) + Number(xChars); i++) {
+      for(var j = 0; j < numTeams; j++) {
+        character = list.splice(Math.round(Math.random() * list.length), 1);
+        teams[j].push(character[0]);
       }
     }
     return teams;
@@ -39,13 +40,14 @@ require([], function () {
 
   Randomizer.prototype.draftPure = function (list, numTeams, numChars) {
     var teams = [];
-    for(k = 0; k < numTeams; k++) {
+    var character;
+    for(var k = 0; k < numTeams; k++) {
       teams.push([]);
     }
-    for(i = 0; i < numChars; i++) {
-      for(j = 0; j < numTeams; j++) {
-        char = list.splice(Math.round(Math.random() * list.length), 1);
-        teams[j].push(char[0]);
+    for(var i = 0; i < numChars; i++) {
+      for(var j = 0; j < numTeams; j++) {
+        character = list.splice(Math.round(Math.random() * list.length), 1);
+        teams[j].push(character[0]);
       }
     }
     return teams;
@@ -53,20 +55,21 @@ require([], function () {
 
   Randomizer.prototype.draftDraft = function (list, numTeams, numChars, xChars) {
     var teams = [];
-    for(k = 0; k <= numTeams; k++) {
+    var character;
+    for(var k = 0; k <= numTeams; k++) {
       teams.push([]);
     }
 
-    for(i = 0; i < Number(numChars) / 2; i++) {
-      for(j = 0; j < numTeams; j++) {
-        char = list.splice(Math.round(Math.random() * list.length), 1);
-        teams[j].push(char[0]);
+    for(var i = 0; i < Number(numChars) / 2; i++) {
+      for(var j = 0; j < numTeams; j++) {
+        character = list.splice(Math.round(Math.random() * list.length), 1);
+        teams[j].push(character[0]);
       }
     }
 
     for(i = 0; i < ((Number(numChars) / 2) * Number(numTeams)) + Number(xChars); i++) {
-      char = list.splice(Math.round(Math.random() * list.length), 1);
-      teams[numTeams].push(char[0]);
+      character = list.splice(Math.round(Math.random() * list.length), 1);
+      teams[numTeams].push(character[0]);
     }
 
     return teams;

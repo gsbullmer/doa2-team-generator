@@ -11,7 +11,7 @@ require([], function () {
   var Category = function (xml) {
     this.name = xml.tagName;
     this.items = [];
-    for(i = 0; i < xml.children.length; i++) {
+    for(var i = 0; i < xml.children.length; i++) {
       var item = [];
       if(xml.children[i].hasAttribute("age")) {
         item.push(xml.children[i].getAttribute("age"));

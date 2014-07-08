@@ -13,6 +13,9 @@ require(['config'], function () {
 
       evt.bind(select, 'change', processForm.checkDraft);
 
+      var submit = document.getElementById('submit_form');
+      evt.bind(submit, 'click', processForm.processForm);
+
     }
   );
 });

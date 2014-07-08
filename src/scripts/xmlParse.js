@@ -24,7 +24,7 @@ define(['character'], function (Character) {
             //  }
 
             characters = xml.getElementsByTagName('characters')[0];
-            for(i = 0; i < characters.children.length; i++) {
+            for(var i = 0; i < characters.children.length; i++) {
                 var characterData = characters.getElementsByTagName('character')[i];
                 var character = new Character(characterData);
                 characterArray.push(character);

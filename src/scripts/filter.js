@@ -6,21 +6,22 @@ require([], function () {
     window.console.log("filtering list");
     var filteredCharList = charList;
 
-    filteredCharList = applyFilter(filteredCharList, 'set', set);
-    filteredCharList = applyFilter(filteredCharList, 'age', age);
-    filteredCharList = applyFilter(filteredCharList, 'setting', setting);
-    filteredCharList = applyFilter(filteredCharList, 'circle', circle);
-    filteredCharList = applyFilter(filteredCharList, 'nature', nature);
+    filteredCharList = this.applyFilter(filteredCharList, 'set', set);
+    filteredCharList = this.applyFilter(filteredCharList, 'age', age);
+    filteredCharList = this.applyFilter(filteredCharList, 'setting', setting);
+    filteredCharList = this.applyFilter(filteredCharList, 'circle', circle);
+    filteredCharList = this.applyFilter(filteredCharList, 'nature', nature);
 
     return filteredCharList;
   };
 
   Filter.prototype.applyFilter = function (list, category, filter) {
     var newList = [];
-    for(i = 0; i < list.length; i++) {
+    var remove;
+    for(var i = 0; i < list.length; i++) {
       remove = true;
-      for(j = 0; j < filter.length; j++) {
-        if(list[i][category] == filter[j]) {
+      for(var j = 0; j < filter.length; j++) {
+        if(list[i][category] === filter[j]) {
           remove = false;
           break;
         }
