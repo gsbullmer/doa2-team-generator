@@ -1,0 +1,65 @@
+body {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 1000px;
+  font-family: sans-serif;
+}
+
+table {
+  margin: auto;
+  text-align: center;
+}
+
+table td {
+  vertical-align: text-top;
+  text-align: left;
+}
+
+span {
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+span:first-of-type {
+  margin-left: 0px;
+}
+
+td {
+  padding: 5px;
+}
+
+.age {
+  width: 25%;
+}
+
+.setting {
+  width: 25%;
+}
+
+select, input, label * {
+  vertical-align: middle;
+}
+
+button {
+  width: 100%;
+  padding: 10px 0px;
+  margin: 10px 0px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold
+}
+
+form {
+  display: block;
+}
+
+#teamOutput {
+  display: none;
+}
