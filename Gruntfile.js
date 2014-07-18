@@ -33,23 +33,13 @@ module.exports = function (grunt) {
     },
 
     jshint: {
+      options: {
+        jshintrc: '.jshintrc'
+      },
       all: [
-        'Gruntfile.js'
+        'Gruntfile.js',
+        'src/scripts/*.js'
       ]
-    },
-
-    uglify: {
-      all: {
-        src: '.tmp/main.js',
-        dest: 'build/main.min.js'
-      }
-    },
-
-    concat: {
-      all: {
-        src: 'src/scripts/*',
-        dest: '.tmp/main.js'
-      }
     },
 
     copy: {
@@ -58,12 +48,29 @@ module.exports = function (grunt) {
           {
             src: '.tmp/main.css',
             dest: 'build/main.min.css'
-          },
-          {
-            src: '.tmp/main.js',
-            dest: 'build/main.min.js'
           }
         ]
+      }
+    },
+
+    requirejs: {
+      options: {
+        baseUrl: 'src/scripts',
+        mainConfigFile: 'src/scripts/config.js',
+        include: ['main'],
+        insertRequire: ['main'],
+        out: 'build/main.min.js',
+        findNestedDependencies: true,
+        name: 'almond'
+      },
+      dev: {
+        options: { optimize: 'none' }
+      },
+      prod: {
+        options: {
+          generateSourceMaps: true,
+          optimize: 'uglify2'
+        }
       }
     }
   });
@@ -77,8 +84,7 @@ module.exports = function (grunt) {
         'csslint',
         'cssmin',
         'jshint',
-        'concat',
-        'uglify'
+        'requirejs:prod'
       ];
     }
     // Development Build
@@ -88,7 +94,7 @@ module.exports = function (grunt) {
         'less',
         'csslint',
         'jshint',
-        'concat',
+        'requirejs:dev',
         'copy'
       ];
     }

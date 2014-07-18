@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <title>Duel of Ages II Team Generator</title>
 
-    <script type="text/javascript" src="build/main.min.js"></script>
-
-    <script type="text/javascript">
-      loadXML("doa2_character_db.xml");
-    </script>
 
     <link rel="stylesheet" href="build/main.min.css">
   </head>
@@ -31,7 +26,7 @@
         <input type="number" name="numChars" min="1" max="99" maxlength="2" size="2" step="1" value="8" required />
 
         <span>Draft Type: </span>
-        <select name="draft" required onchange="checkDraft(this)">
+        <select id="draft_type" name="draft" required >
           <option value="standard">Standard</option>
           <option value="pure" selected>Pure</option>
           <option value="draft">Draft</option>
@@ -59,73 +54,73 @@
             </tr>
             <tr>
               <td class="age">
-                <input type="checkbox" name="age" id="a1" value="Ancient" onclick="checkClicked(this, this.form);" checked />
+                <input type="checkbox" name="age" id="a1" value="Ancient" class="setting-checkbox" checked />
                 <label for="a1">Ancient</label>
               </td>
               <td class="setting">
-                <input type="checkbox" name="setting" id="s11" value="Epic Heroes" onclick="checkClicked(this, this.form);" checked />
+                <input type="checkbox" name="setting" id="s11" value="Epic Heroes" class="setting-checkbox" checked />
                 <label for="s11"><img src="Images/setting/EpicHeroes.png"/> Epic Heroes</label>
               </td>
               <td class="setting">
-                <input type="checkbox" name="setting" id="s12" value="Faer" onclick="checkClicked(this, this.form);" checked />
+                <input type="checkbox" name="setting" id="s12" value="Faer" class="setting-checkbox" checked />
                 <label for="s12"><img src="Images/setting/Faer.png"/> Faer</label>
               </td>
               <td class="setting">
-                <input type="checkbox" name="setting" id="s13" value="Chasms" onclick="checkClicked(this, this.form);" checked />
+                <input type="checkbox" name="setting" id="s13" value="Chasms" class="setting-checkbox" checked />
                 <label for="s13"><img src="Images/setting/Chasm.png"/> Chasms</label>
               </td>
             </tr>
             <tr>
               <td class="age">
-                <input type="checkbox" name="age" id="a2" value="Colonial" onclick="checkClicked(this, this.form);" checked />
+                <input type="checkbox" name="age" id="a2" value="Colonial" class="setting-checkbox" checked />
                 <label for="a2">Colonial</label>
               </td>
               <td class="setting">
-                <input type="checkbox" name="setting" id="s21" value="Lands West" onclick="checkClicked(this, this.form);" checked />
+                <input type="checkbox" name="setting" id="s21" value="Lands West" class="setting-checkbox" checked />
                 <label for="s21"><img src="Images/setting/LandsWest.png"/> Lands West</label>
               </td>
               <td class="setting">
-                <input type="checkbox" name="setting" id="s22" value="Folktales" onclick="checkClicked(this, this.form);" checked />
+                <input type="checkbox" name="setting" id="s22" value="Folktales" class="setting-checkbox" checked />
                 <label for="s22"><img src="Images/setting/Folktales.png"/> Folktales</label>
               </td>
               <td class="setting">
-                <input type="checkbox" name="setting" id="s23" value="Horizons" onclick="checkClicked(this, this.form);" checked />
+                <input type="checkbox" name="setting" id="s23" value="Horizons" class="setting-checkbox" checked />
                 <label for="s23"><img src="Images/setting/Horizons.png"/> Horizons</label>
               </td>
             </tr>
             <tr>
               <td class="age">
-                <input type="checkbox" name="age" id="a3" value="Modern" onclick="checkClicked(this, this.form);" checked />
+                <input type="checkbox" name="age" id="a3" value="Modern" class="setting-checkbox" checked />
                 <label for="a3">Modern</label>
               </td>
               <td class="setting">
-                <input type="checkbox" name="setting" id="s31" value="Age of Crisis" onclick="checkClicked(this, this.form);" checked />
+                <input type="checkbox" name="setting" id="s31" value="Age of Crisis" class="setting-checkbox" checked />
                 <label for="s31"><img src="Images/setting/AgeOfCrisis.png"/> Age of Crisis</label>
               </td>
               <td class="setting">
-                <input type="checkbox" name="setting" id="s32" value="The Underground" onclick="checkClicked(this, this.form);" checked />
+                <input type="checkbox" name="setting" id="s32" value="The Underground" class="setting-checkbox" checked />
                 <label for="s32"><img src="Images/setting/Underground.png"/> The Underground</label>
               </td>
               <td class="setting">
-                <input type="checkbox" name="setting" id="s33" value="Strange Times" onclick="checkClicked(this, this.form);" checked />
+                <input type="checkbox" name="setting" id="s33" value="Strange Times" class="setting-checkbox" checked />
                 <label for="s33"><img src="Images/setting/StrangeTimes.png"/> Strange Times</label>
               </td>
             </tr>
             <tr>
               <td class="age">
-                <input type="checkbox" name="age" id="a4" value="Future" onclick="checkClicked(this, this.form);" checked />
+                <input type="checkbox" name="age" id="a4" value="Future" class="setting-checkbox" checked />
                 <label for="a4">Future</label>
               </td>
               <td class="setting">
-                <input type="checkbox" name="setting" id="s41" value="Altspace" onclick="checkClicked(this, this.form);" checked />
+                <input type="checkbox" name="setting" id="s41" value="Altspace" class="setting-checkbox" checked />
                 <label for="s41"><img src="Images/setting/Altspace.png"/> Altspace</label>
               </td>
               <td class="setting">
-                <input type="checkbox" name="setting" id="s42" value="Starmarch" onclick="checkClicked(this, this.form);" checked />
+                <input type="checkbox" name="setting" id="s42" value="Starmarch" class="setting-checkbox" checked />
                 <label for="s42"><img src="Images/setting/Starmarch.png"/> Starmarch</label>
               </td>
               <td class="setting">
-                <input type="checkbox" name="setting" id="s43" value="Forty Worlds" onclick="checkClicked(this, this.form);" checked />
+                <input type="checkbox" name="setting" id="s43" value="Forty Worlds" class="setting-checkbox" checked />
                 <label for="s43"><img src="Images/setting/FortyWorlds.png"/> Forty Worlds</label>
               </td>
             </tr>
@@ -227,7 +222,7 @@
         </table>
       </fieldset>
 
-      <button type="button" onclick="processForm(this.form);">Draft Teams</button>
+      <button type="button" id="submit_form">Draft Teams</button>
 
     </form>
 
@@ -237,8 +232,10 @@
         <tr id="header"></tr>
         <tr id="teams"></tr>
       </table>
-      <button type="button" onclick="showForm(); hideTeams();">Reset Teams</button>
+      <button type="button" id="reset_button">Reset Teams</button>
     </div>
 
   </body>
+
+  <script type="text/javascript" src="build/main.min.js"></script>
 </html>
