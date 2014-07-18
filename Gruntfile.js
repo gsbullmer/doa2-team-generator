@@ -69,6 +69,7 @@ module.exports = function (grunt) {
       prod: {
         options: {
           generateSourceMaps: true,
+          preserveLicenseComments: false,
           optimize: 'uglify2'
         }
       }
