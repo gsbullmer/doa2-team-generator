@@ -14,7 +14,7 @@ define([], function () {
         },
         parseXML: function (collection) {
             var characters = xml.getElementsByTagName('characters')[0];
-            for(var i = 0; i < characters.children.length; i++) {
+            for(var i = 0; i < characters.childNodes.length; i++) {
                 var characterData = characters.getElementsByTagName('character')[i];
                 collection.add(characterData);
             }
