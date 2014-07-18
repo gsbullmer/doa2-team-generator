@@ -2,16 +2,18 @@ define([], function () {
   'use strict';
 
   var Character = function(xml) {
-    this.id      = xml.getAttribute('id');
-    this.set     = xml.getAttribute('set');
-    this.name    = xml.getAttribute('name');
-    this.title   = xml.getAttribute('title');
-    this.age     = xml.getAttribute('age');
-    this.setting = xml.getAttribute('setting');
-    this.circle  = xml.getAttribute('circle');
-    this.nature  = xml.getAttribute('nature');
-    this.stats   = xml.getAttribute('stats').split(',');
-    window.console.log("Character created");
+    if (typeof(xml) !== 'undefined') {
+      this.id      = xml.getAttribute('id');
+      this.set     = xml.getAttribute('set');
+      this.name    = xml.getAttribute('name');
+      this.title   = xml.getAttribute('title');
+      this.age     = xml.getAttribute('age');
+      this.setting = xml.getAttribute('setting');
+      this.circle  = xml.getAttribute('circle');
+      this.nature  = xml.getAttribute('nature');
+      this.stats   = xml.getAttribute('stats').split(',');
+      window.console.log("Character created");
+    }
   };
 
   Character.prototype.id      = '';
